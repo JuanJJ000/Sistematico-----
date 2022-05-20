@@ -35,9 +35,9 @@ namespace Appcore.Services
             return estudiante1.GetAll();
         }
 
-        public int CalculoPromedio(Estudiante estudiante)
+        public int CalculoPromedio(int id)
         {
-            return estudiante1.CalculoPromedio(estudiante);
+            return estudiante1.CalculoPromedio(id);
         }
 
         public Estudiante FindById(int id)

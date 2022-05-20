@@ -17,9 +17,28 @@ namespace Infrastructure.Repository
             this.pepitoSchoolContext = pepitoSchoolContext;
         }
 
-        public int CalculoPromedio(Estudiante estudiante)
+        public int CalculoPromedio(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+
+                Estudiante estudiante = FindById(id);
+
+
+                if (estudiante == null)
+                {
+                    throw new ArgumentNullException("El objeto Estudiante no puede ser null.");
+                }
+                int promedio = (estudiante.Matematica + estudiante.Contabilidad + estudiante.Programación + estudiante.Estadistica) / 4;             
+                return promedio;
+
+            }
+            catch (Exception)
+            {
+
+                return 0;         
+                    
+            }
         }
 
         public void Create(Estudiante t)
@@ -42,13 +61,13 @@ namespace Infrastructure.Repository
             {
                 if (t == null)
                 {
-                    throw new ArgumentNullException("El objeto Employee no puede ser null.");
+                    throw new ArgumentNullException("El objeto Estudiante no puede ser null.");                  
                 }
 
                 Estudiante estudiante = FindById(t.Id);
                 if (estudiante == null)
                 {
-                    throw new Exception($"El objeto con dni {t.Id} no existe.");
+                    throw new Exception($"El objeto con estudiante no existe.");
                 }
 
                 pepitoSchoolContext.Estudiantes.Remove(estudiante);
@@ -58,7 +77,7 @@ namespace Infrastructure.Repository
             }
             catch (Exception)
             {
-                throw;
+                return false;
             }
         }
 
@@ -126,10 +145,7 @@ namespace Infrastructure.Repository
             }
 
            
-            if (estudiante.Id <= 0)
-            {
-                throw new Exception("El nombre del estudiante no puede ser null o vacio.");
-            }
+          
         }
 
 

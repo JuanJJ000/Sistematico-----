@@ -11,7 +11,7 @@ namespace Domain.Interfaces
     {
 
 
-        int CalculoPromedio(Estudiante estudiante);
+        int CalculoPromedio(int id);
         Estudiante FindById(int id);
 
     }

@@ -36,6 +36,7 @@ namespace Presentation
             this.bntAgregar = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.bntActualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvEstudiantes)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -52,7 +53,7 @@ namespace Presentation
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.Red;
-            this.btnEliminar.Location = new System.Drawing.Point(165, 3);
+            this.btnEliminar.Location = new System.Drawing.Point(246, 3);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 51);
             this.btnEliminar.TabIndex = 3;
@@ -66,6 +67,7 @@ namespace Presentation
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(158, 23);
             this.txtId.TabIndex = 4;
+            this.txtId.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtId_KeyPress);
             // 
             // lblID
             // 
@@ -85,26 +87,40 @@ namespace Presentation
             this.bntAgregar.TabIndex = 7;
             this.bntAgregar.Text = "Agregar";
             this.bntAgregar.UseVisualStyleBackColor = false;
+            this.bntAgregar.Click += new System.EventHandler(this.bntAgregar_Click);
             // 
             // btnCalcular
             // 
             this.btnCalcular.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnCalcular.Location = new System.Drawing.Point(84, 3);
+            this.btnCalcular.Location = new System.Drawing.Point(165, 3);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(75, 51);
             this.btnCalcular.TabIndex = 8;
             this.btnCalcular.Text = "Calcular Promedio";
             this.btnCalcular.UseVisualStyleBackColor = false;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.bntAgregar);
+            this.flowLayoutPanel1.Controls.Add(this.bntActualizar);
             this.flowLayoutPanel1.Controls.Add(this.btnCalcular);
             this.flowLayoutPanel1.Controls.Add(this.btnEliminar);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(215, 126);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(188, 126);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(251, 100);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(327, 74);
             this.flowLayoutPanel1.TabIndex = 9;
+            // 
+            // bntActualizar
+            // 
+            this.bntActualizar.BackColor = System.Drawing.Color.Aqua;
+            this.bntActualizar.Location = new System.Drawing.Point(84, 3);
+            this.bntActualizar.Name = "bntActualizar";
+            this.bntActualizar.Size = new System.Drawing.Size(75, 51);
+            this.bntActualizar.TabIndex = 9;
+            this.bntActualizar.Text = "Actualizar";
+            this.bntActualizar.UseVisualStyleBackColor = false;
+            this.bntActualizar.Click += new System.EventHandler(this.bntActualizar_Click);
             // 
             // Form1
             // 
@@ -116,7 +132,7 @@ namespace Presentation
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.dtgvEstudiantes);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Servicio a Estudiante";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvEstudiantes)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -134,6 +150,7 @@ namespace Presentation
         private System.Windows.Forms.Button bntAgregar;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button bntActualizar;
     }
 }
 
