@@ -9,7 +9,7 @@ namespace Appcore.Interfaces
 {
     public interface IEstudianteService: IService<Estudiante>
     {
-        int CalculoPromedio(Estudiante estudiante);
+        int CalculoPromedio(int id);
         Estudiante FindById(int id);
 
     }
