@@ -54,7 +54,7 @@ namespace Presentation
             }
             Estudiante estudiante = new Estudiante()
             {
-                Id = estudianteService.GetAll().Count+1,
+               
                 Nombres = txtNombre.Text,
                 Apellidos = txtApellidos.Text,
                 Phone = txtTelefono.Text,

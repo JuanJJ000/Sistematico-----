@@ -39,6 +39,7 @@ namespace Presentation
             if (estudianteService.Delete(estudianteService.FindById(Int32.Parse(txtId.Text))) == true)
             {
                 MessageBox.Show("Se ha eliminado el estudiante");
+                LoadDataGridView();
             }
             else 
             {
