@@ -94,7 +94,7 @@ namespace Infrastructure.Repository
             }
             catch
             {
-                throw;
+                return null;
             }
         }
 
@@ -109,13 +109,14 @@ namespace Infrastructure.Repository
             {
                 if (t == null)
                 {
-                    throw new ArgumentNullException("El objeto asset no puede ser null.");
+                    throw new ArgumentNullException("El objeto estudiante no puede ser null.");
+
                 }
 
                 Estudiante estudiante = FindById(t.Id);
                 if (estudiante == null)
                 {
-                    throw new Exception($"El objeto asset con id {t.Id} no existe.");
+                    throw new Exception($"El objeto estudiante no existe.");
                 }
 
                 estudiante.Nombres = t.Nombres;
@@ -133,7 +134,7 @@ namespace Infrastructure.Repository
             }
             catch
             {
-                throw;
+                return 0;
             }
         }
 

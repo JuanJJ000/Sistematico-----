@@ -6451,11 +6451,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\juanj\\source\\repos\\Sistematico---\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\juanj\\Source\\Repos\\Sistematico-----\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\juanj\\source\\repos\\Sistematico---\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Users\\juanj\\Source\\Repos\\Sistematico-----\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\juanj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\juanj\\source\\repos\\Sistematico---\\Domain\\obj\\",
+      "outputPath": "C:\\Users\\juanj\\Source\\Repos\\Sistematico-----\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

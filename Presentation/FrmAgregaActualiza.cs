@@ -17,6 +17,7 @@ namespace Presentation
    
 
         public int Opcion;
+        public int temporal;
         private IEstudianteService estudianteService;
 
         public FrmAgregaActualiza(IEstudianteService estudianteService)
@@ -77,21 +78,26 @@ namespace Presentation
         {
             emptytext();
 
-            Estudiante estudiante = new Estudiante()
+            Estudiante estudianteTemp = estudianteService.FindById(temporal);
+            if(estudianteTemp== null)
             {
-                Nombres = txtNombre.Text,
-                Apellidos = txtApellidos.Text,
-                Phone = txtTelefono.Text,
-                Direccion = txtDireccion.Text,
-                Correo = txtCorreo.Text,
-                Matematica = (int)nudMatematicas.Value,
-                Contabilidad = (int)nudContabilidad.Value,
-                Programación = (int)nudProgramación.Value,
-                Estadistica = (int)nudEstadisticas.Value
+                MessageBox.Show("No se encontro al estudiante");
+                return;
+            }
+           
 
-            };
+                estudianteTemp.Nombres = txtNombre.Text;
+            estudianteTemp.Apellidos = txtApellidos.Text;
+            estudianteTemp.Phone = txtTelefono.Text;
+            estudianteTemp.Direccion = txtDireccion.Text;
+                estudianteTemp.Correo = txtCorreo.Text;
+            estudianteTemp.Matematica = (int)nudMatematicas.Value;
+            estudianteTemp.Contabilidad = (int)nudContabilidad.Value;
+            estudianteTemp.Programación = (int)nudProgramación.Value;
+            estudianteTemp.Estadistica = (int)nudEstadisticas.Value;
 
-            estudianteService.Update(estudiante);
+          
+            estudianteService.Update(estudianteTemp);
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -106,7 +112,7 @@ namespace Presentation
         {
 
             if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtDireccion.Text) || string.IsNullOrWhiteSpace(txtApellidos.Text)
-               || string.IsNullOrWhiteSpace(txtCarnet.Text) || string.IsNullOrWhiteSpace(txtCorreo.Text) || string.IsNullOrWhiteSpace(txtTelefono.Text)
+                || string.IsNullOrWhiteSpace(txtCorreo.Text) || string.IsNullOrWhiteSpace(txtTelefono.Text)
                 )
             {
                 MessageBox.Show("Por favor Ingresar todos los datos");

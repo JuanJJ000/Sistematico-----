@@ -61,10 +61,19 @@ namespace Presentation
 
         private void bntActualizar_Click(object sender, EventArgs e)
         {
-            FrmAgregaActualiza frmAgregaActualiza = new FrmAgregaActualiza(estudianteService);
-            frmAgregaActualiza.Opcion = 2;
             this.Hide();
-            frmAgregaActualiza.Show();
+            if (string.IsNullOrWhiteSpace(txtId.Text))
+            {
+                MessageBox.Show("Por favor Ingrese el Id");
+                return;
+            }
+
+            FrmAgregaActualiza frmAgregaActualiza = new FrmAgregaActualiza(estudianteService);
+           
+            frmAgregaActualiza.Opcion = 2;
+            frmAgregaActualiza.temporal = Int32.Parse(txtId.Text);
+            
+            frmAgregaActualiza.ShowDialog();
             LoadDataGridView();
             this.Show();
         }

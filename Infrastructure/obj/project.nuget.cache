@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sHVjmzFbCLXrL3+NGZCKatoSkILokRAurUyhN4dG1/4ZDqjIKn2oPgUgXZ5/pCfbaUNY76DzoOc8w142vZ6M0A==",
+  "dgSpecHash": "Gcih+JufJ50ToW4Es9kGLZoEngK73EuXGbhtlACqwP/mHmGipW/6D3VnC3nobldSioUrTwwv54oH1TXfMyWG+g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\juanj\\source\\repos\\Sistematico---\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\juanj\\Source\\Repos\\Sistematico-----\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\juanj\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\juanj\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

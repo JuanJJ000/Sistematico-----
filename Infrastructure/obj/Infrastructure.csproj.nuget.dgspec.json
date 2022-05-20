@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\juanj\\source\\repos\\Sistematico---\\Infrastructure\\Infrastructure.csproj": {}
+    "C:\\Users\\juanj\\Source\\Repos\\Sistematico-----\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\juanj\\source\\repos\\Sistematico---\\Domain\\Domain.csproj": {
+    "C:\\Users\\juanj\\Source\\Repos\\Sistematico-----\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juanj\\source\\repos\\Sistematico---\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\juanj\\Source\\Repos\\Sistematico-----\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\juanj\\source\\repos\\Sistematico---\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\juanj\\Source\\Repos\\Sistematico-----\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\juanj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\juanj\\source\\repos\\Sistematico---\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\juanj\\Source\\Repos\\Sistematico-----\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -88,14 +88,14 @@
         }
       }
     },
-    "C:\\Users\\juanj\\source\\repos\\Sistematico---\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\juanj\\Source\\Repos\\Sistematico-----\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juanj\\source\\repos\\Sistematico---\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\juanj\\Source\\Repos\\Sistematico-----\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\juanj\\source\\repos\\Sistematico---\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\juanj\\Source\\Repos\\Sistematico-----\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\juanj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\juanj\\source\\repos\\Sistematico---\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\juanj\\Source\\Repos\\Sistematico-----\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -116,8 +116,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\juanj\\source\\repos\\Sistematico---\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\juanj\\source\\repos\\Sistematico---\\Domain\\Domain.csproj"
+              "C:\\Users\\juanj\\Source\\Repos\\Sistematico-----\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\juanj\\Source\\Repos\\Sistematico-----\\Domain\\Domain.csproj"
               }
             }
           }
